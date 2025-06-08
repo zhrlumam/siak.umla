@@ -1,5 +1,1 @@
-2025-06-08 22:24:52 | Username: login | Password: login | Lokasi: https://www.google.com/maps?q=-7.090911,107.668887
-2025-06-08 22:28:36 | Username: Mochgggg | Password: okokgggg | Lokasi: https://www.google.com/maps?q=-7.04746,112.306305
-2025-06-08 22:45:45 | Username: umam | Password: 999999999 | Lokasi: https://www.google.com/maps?q=-7.090911,107.668887
-2025-06-08 23:45:21 | Username: Moch saleh | Password: okok989898 | Lokasi: https://www.google.com/maps?q=-7.04746,112.306305
-2025-06-08 23:49:10 | Username: Moch saleh | Password: okok | Lokasi: https://www.google.com/maps?q=-7.04746,112.306305
+
