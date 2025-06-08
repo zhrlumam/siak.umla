@@ -27,7 +27,7 @@ def login():
 
         return "Login gagal: Username atau password salah"
 
-    return render_template('login.html')
+    return render_template((url_for('login')))
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
