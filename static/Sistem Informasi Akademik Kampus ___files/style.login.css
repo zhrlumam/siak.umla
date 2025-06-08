@@ -1,0 +1,116 @@
+BODY {
+	TEXT-ALIGN: center; BACKGROUND-COLOR: #23497a
+}
+H1 {
+	DISPLAY: none
+}
+
+H3.judul {
+	color:#13386a;
+	margin:5px 5px 5px 15px;
+	font-size:28px;
+	padding-bottom:7px;
+}
+
+#loginWrapper {
+	BACKGROUND-IMAGE: url(../images/loginWrapper-bg.gif); TEXT-ALIGN: left; PADDING-BOTTOM: 13px; PADDING-LEFT: 0px; WIDTH: 556px; PADDING-RIGHT: 0px; OVERFLOW: hidden; PADDING-TOP: 10px
+}
+#loginBox {
+	BACKGROUND-COLOR: #104070; MARGIN: 0px 0px 0px 11px; WIDTH: 531px; HEIGHT: 486px
+}
+#loginBox-head {
+	BACKGROUND-IMAGE: url(../images/loginBox-head-img.jpg); WIDTH: 531px; HEIGHT: 67px
+}
+#loginBox-title {
+	BACKGROUND-IMAGE: url(../images/loginBox-title-img.jpg); BACKGROUND-COLOR: #104070; MARGIN: 0px; WIDTH: 531px; HEIGHT: 152px
+}
+#loginBox-body {
+	BACKGROUND-IMAGE: url(../images/loginBox-body-img.jpg); TEXT-ALIGN: center; MARGIN: 0px; WIDTH: 531px; DISPLAY: block; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; HEIGHT: 221px; FONT-SIZE: 8pt
+}
+#loginBox-foot {
+	BACKGROUND-IMAGE: url(../images/loginBox-foot-img.jpg); WIDTH: 531px; HEIGHT: 46px
+}
+#form-ket {
+	TEXT-ALIGN: left; 
+	PADDING-BOTTOM: 5px; 
+	PADDING-LEFT: 5px; 
+	WIDTH: 400px; 
+	PADDING-RIGHT: 5px; 
+	COLOR: #1a3d6a; 
+	PADDING-TOP: 5px;
+	background-color:#CCCCCC;
+}
+
+#form-login {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 25px; MARGIN: 0px 140px; PADDING-LEFT: 25px; WIDTH: 200px; PADDING-RIGHT: 25px; COLOR: #1a3d6a; PADDING-TOP: 25px
+}
+#form-login LABEL {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 60px; PADDING-RIGHT: 0px; FLOAT: left; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+#form-login INPUT {
+	BORDER-BOTTOM: #23497a 1px solid; BORDER-LEFT: #23497a 1px solid; PADDING-BOTTOM: 3px; MARGIN: 1px 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Tahoma, Arial, Helvetica, sans-serif; FONT-SIZE: 8pt; BORDER-TOP: #23497a 1px solid; BORDER-RIGHT: #23497a 1px solid; PADDING-TOP: 3px
+}
+#form-login HR {
+	BORDER-BOTTOM: #23497a 1px solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; MARGIN: 30px 0px 5px 1px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 0px; BORDER-TOP: #909311 0px solid; BORDER-RIGHT: medium none; PADDING-TOP: 30px
+}
+#form-login DIV {
+	TEXT-ALIGN: right
+}
+#form-login A {
+	COLOR: #c2a905; TEXT-DECORATION: none
+}
+#form-login A:hover {
+	TEXT-DECORATION: underline
+}
+#login-box-info {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 10px; MARGIN: 0px 60px 10px; PADDING-LEFT: 0px; WIDTH: 390px; PADDING-RIGHT: 10px; COLOR: #23497a; FONT-SIZE: 8pt; PADDING-TOP: 40px
+}
+#login-box-info H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10pt; PADDING-TOP: 0px
+}
+#login-box-info IMG {
+	MARGIN: 0px 10px 10px 0px; FLOAT: left
+}
+#login-box-info A {
+	COLOR: #c2a905; TEXT-DECORATION: none
+}
+#login-box-info A:hover {
+	TEXT-DECORATION: underline
+}
+
+
+.error {
+position:relative;
+	BORDER-BOTTOM: #ffcece 1px solid; 
+	BORDER-LEFT: #ffcece 1px solid; 
+	BORDER-RIGHT: #ffcece 1px solid; 
+	BORDER-TOP: #ffcece 1px solid; 
+	
+	PADDING-BOTTOM: 2px !important; 
+	PADDING-LEFT: 25px !important; 
+	PADDING-RIGHT: 2px !important; 
+	PADDING-TOP: 1px !important;
+	
+	DISPLAY: block; 
+	BACKGROUND: url(../images/notice-error.png) #fdf0f0 no-repeat ; 
+	COLOR: #990000 !important; 
+	
+	height:20px;
+}
+
+
+
+.sukses{
+position:relative;
+	PADDING-BOTTOM: 2px !important; 
+	PADDING-LEFT: 25px !important; 
+	PADDING-RIGHT: 2px !important; 
+	PADDING-TOP: 1px !important;
+	DISPLAY: block;
+	
+	color:#330000;
+	background-color:#6699FF;
+	BORDER: #000033 1px solid; 
+   margin: 0;  /*top right bottom left*/ 
+  
+}

@@ -1,0 +1,141 @@
+#colorbox {
+	Z-INDEX: 9999; POSITION: absolute; OVERFLOW: hidden; TOP: 0px; LEFT: 0px
+}
+#cboxOverlay {
+	Z-INDEX: 9999; POSITION: absolute; OVERFLOW: hidden; TOP: 0px; LEFT: 0px
+}
+#cboxWrapper {
+	Z-INDEX: 9999; POSITION: absolute; OVERFLOW: hidden; TOP: 0px; LEFT: 0px
+}
+#cboxOverlay {
+	POSITION: fixed; WIDTH: 100%; HEIGHT: 100%
+}
+#cboxMiddleLeft {
+	CLEAR: left
+}
+#cboxBottomLeft {
+	CLEAR: left
+}
+#cboxContent {
+	POSITION: relative; OVERFLOW: hidden
+}
+#cboxLoadedContent {
+	OVERFLOW: auto
+}
+#cboxLoadedContent IFRAME {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; DISPLAY: block; HEIGHT: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+#cboxTitle {
+	MARGIN: 0px
+}
+#cboxLoadingOverlay {
+	POSITION: absolute; WIDTH: 100%; TOP: 0px; LEFT: 0px
+}
+#cboxLoadingGraphic {
+	POSITION: absolute; WIDTH: 100%; TOP: 0px; LEFT: 0px
+}
+#cboxPrevious {
+	CURSOR: pointer
+}
+#cboxNext {
+	CURSOR: pointer
+}
+#cboxClose {
+	CURSOR: pointer
+}
+#cboxSlideshow {
+	CURSOR: pointer
+}
+#cboxOverlay {
+	BACKGROUND: url(../images/overlay.png) 0px 0px
+}
+#colorbox {
+	
+}
+#cboxTopLeft {
+	WIDTH: 21px; BACKGROUND: url(../images/controls.png) no-repeat -100px 0px; HEIGHT: 21px
+}
+#cboxTopRight {
+	WIDTH: 21px; BACKGROUND: url(../images/controls.png) no-repeat -129px 0px; HEIGHT: 21px
+}
+#cboxBottomLeft {
+	WIDTH: 21px; BACKGROUND: url(../images/controls.png) no-repeat -100px -29px; HEIGHT: 21px
+}
+#cboxBottomRight {
+	WIDTH: 21px; BACKGROUND: url(../images/controls.png) no-repeat -129px -29px; HEIGHT: 21px
+}
+#cboxMiddleLeft {
+	WIDTH: 21px; BACKGROUND: url(../images/controls.png) repeat-y left top
+}
+#cboxMiddleRight {
+	WIDTH: 21px; BACKGROUND: url(../images/controls.png) repeat-y right top
+}
+#cboxTopCenter {
+	BACKGROUND: url(../images/border.png) repeat-x 0px 0px; HEIGHT: 21px
+}
+#cboxBottomCenter {
+	BACKGROUND: url(../images/border.png) repeat-x 0px -29px; HEIGHT: 21px
+}
+#cboxContent {
+	BACKGROUND: #fff
+}
+#cboxLoadedContent {
+	MARGIN-BOTTOM: 28px
+}
+#cboxTitle {
+	POSITION: absolute; TEXT-ALIGN: center; WIDTH: 100%; BOTTOM: 4px; COLOR: #949494; LEFT: 0px
+}
+#cboxCurrent {
+	POSITION: absolute; BOTTOM: 4px; COLOR: #949494; LEFT: 58px
+}
+#cboxSlideshow {
+	POSITION: absolute; BOTTOM: 4px; COLOR: #0092ef; RIGHT: 30px
+}
+#cboxPrevious {
+	POSITION: absolute; TEXT-INDENT: -9999px; WIDTH: 25px; BOTTOM: 0px; BACKGROUND: url(../images/controls.png) no-repeat -75px 0px; HEIGHT: 25px; LEFT: 0px
+}
+.hover#cboxPrevious {
+	BACKGROUND-POSITION: -75px -25px
+}
+#cboxNext {
+	POSITION: absolute; TEXT-INDENT: -9999px; WIDTH: 25px; BOTTOM: 0px; BACKGROUND: url(../images/controls.png) no-repeat -50px 0px; HEIGHT: 25px; LEFT: 27px
+}
+.hover#cboxNext {
+	BACKGROUND-POSITION: -50px -25px
+}
+#cboxLoadingOverlay {
+	BACKGROUND: url(../images/loading.gif) no-repeat center center
+}
+#cboxLoadingGraphic {
+	BACKGROUND: url(../images/loading.gif) no-repeat center center
+}
+#cboxClose {
+	POSITION: absolute; TEXT-INDENT: -9999px; WIDTH: 25px; BOTTOM: 0px; BACKGROUND: url(../images/controls.png) no-repeat -25px 0px; HEIGHT: 25px; RIGHT: 0px
+}
+.hover#cboxClose {
+	BACKGROUND-POSITION: -25px -25px
+}
+.cboxIE #cboxTopLeft {
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderTopLeft.png, sizingMethod='scale'); BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.cboxIE #cboxTopCenter {
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderTopCenter.png, sizingMethod='scale'); BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.cboxIE #cboxTopRight {
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderTopRight.png, sizingMethod='scale'); BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.cboxIE #cboxBottomLeft {
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderBottomLeft.png, sizingMethod='scale'); BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.cboxIE #cboxBottomCenter {
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderBottomCenter.png, sizingMethod='scale'); BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.cboxIE #cboxBottomRight {
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderBottomRight.png, sizingMethod='scale'); BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.cboxIE #cboxMiddleLeft {
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderMiddleLeft.png, sizingMethod='scale'); BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.cboxIE #cboxMiddleRight {
+	FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderMiddleRight.png, sizingMethod='scale'); BACKGROUND: none transparent scroll repeat 0% 0%
+}

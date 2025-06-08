@@ -1,0 +1,16 @@
+.error {
+position:relative;
+	BORDER-BOTTOM: #ffcece 1px solid; 
+	BORDER-LEFT: #ffcece 1px solid; 
+	PADDING-BOTTOM: 2px !important; 
+	PADDING-LEFT: 2px !important; 
+	PADDING-RIGHT: 2px !important; 
+	
+	DISPLAY: block;
+	BACKGROUND: #fdf0f0  ; 
+	COLOR: #990000 !important; 
+	BORDER-TOP: #ffcece 1px solid; 
+	BORDER-RIGHT: #ffcece 1px solid; 
+	PADDING-TOP: 1px !important;
+	height:20px;
+}
